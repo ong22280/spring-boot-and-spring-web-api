@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "5119ee25-44d5-4ddb-b2d9-6e8804506184",
+		"name": "Restaurant",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25524252",
+		"_collection_link": "https://www.postman.com/warped-station-149034/workspace/spring-web-api-with-spring-data-jpa/collection/25524252-5119ee25-44d5-4ddb-b2d9-6e8804506184?action=share&creator=25524252&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "getAllRestaurants",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/restaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createRestaurant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Art of Coffeeee\",\r\n    \"rating\": 5.0,\r\n    \"location\": \"Bangkhen\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://www.localhost:8090/restaurant",
+					"protocol": "http",
+					"host": [
+						"www",
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRestaurantById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://www.localhost:8090/restaurant/{id}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"c6a7353e-e081-487c-81d3-5cb16730e9f3\",\r\n    \"name\": \"Art of Coffee 2\",\r\n    \"rating\": 4.0,\r\n    \"location\": \"Bangkhen 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/restaurant",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://www.localhost:8090/restaurant/{id}",
+					"protocol": "http",
+					"host": [
+						"www",
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRestaurantByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/restaurant/name/{name}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant",
+						"name",
+						"{name}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getRestaurantByLocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/restaurant/location/{location}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"restaurant",
+						"location",
+						"{location}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
